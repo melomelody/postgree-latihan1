@@ -18,7 +18,7 @@ Buatlah query untuk menampilkan kode department apa saja yang ada di tabel emplo
 SELECT DISTINCT (department_id)FROM employees ORDER BY department_id
 
 Buatlah query untuk menampilkan nama lengkap karyawan, kode jabatan, gaji setahun dari table employees yang kode manager sama dengan 100.
-select first_name || ' ' || last_name as nama_lengkap , employee_id , (salary * 12) as gaji_setahun from employees where manager_id = 100
+select first_name || ' ' || last_name as nama_lengkap , employee_id , (salary * 365) as gaji_setahun from employees where manager_id = 100
 
 Buatlah query untuk menampilkan nama belakang, gaji perbulan, kode jabatan dari table employees yang tidak memiliki komisi
 select last_name, (salary * 30) as gaji_bulanan, job_id, from employees where commission_pct is NULL
